@@ -58,6 +58,8 @@ wp core install \
 
 wp rewrite structure "/archives/%post_id%"
 
+wp plugin install contact-form-7 --activate
+
 wp option update blogname "$WP_TITLE"
 wp option update blogdescription "$WP_DESC"
 

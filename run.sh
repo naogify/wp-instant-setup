@@ -18,7 +18,7 @@ fi
 
 echo "path: www" > $(pwd)/wp-cli.yml
 
-wp core download --path=$WP_PATH --locale=en_US --version=trunk --force
+wp core download --path=$WP_PATH --locale=ja --version=trunk --force
 
 if [ $DB_PASS ]; then
 wp config create \
@@ -28,7 +28,7 @@ wp config create \
 --dbuser="$DB_USER" \
 --dbpass="$DB_PASS" \
 --dbprefix=wp_ \
---locale=en_US \
+--locale=ja \
 --extra-php <<PHP
 define( 'JETPACK_DEV_DEBUG', true );
 define( 'WP_DEBUG', true );

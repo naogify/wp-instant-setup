@@ -18,7 +18,7 @@ fi
 
 echo "path: www" > $(pwd)/wp-cli.yml
 
-wp core download --path=$WP_PATH --locale=ja --version=trunk --force
+wp core download --path=$WP_PATH --locale=en_US --version=trunk --force
 
 if [ $DB_PASS ]; then
 wp config create \

@@ -58,7 +58,10 @@ wp core install \
 
 wp rewrite structure "/archives/%post_id%"
 
-wp plugin install contact-form-7 --activate
+wp theme install lightning --activate
+wp theme install bizvektor-global-edition
+
+wp plugin install all-in-one-wp-migration --activate
 
 wp option update blogname "$WP_TITLE"
 wp option update blogdescription "$WP_DESC"
